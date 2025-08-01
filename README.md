@@ -15,3 +15,28 @@ A lightweight, fully invisible Chrome browser extension that silently blocks phi
 1. Clone or download this repository  
    ```bash
    git clone https://github.com/abdyar/Invisible-Anti-Phishing-Browser-Extension.git
+2. Open Chrome and navigate to chrome://extensions/
+
+3. Enable Developer mode (top right)
+
+4. Click Load unpacked and select the project folder
+
+5. The extension will start running silently in the background
+
+## Usage
+No UI or interaction needed
+
+The extension automatically blocks phishing domains listed in rules.json
+
+To add or update blocked sites, edit the rules.json file and reload the extension
+
+## Development
+Manifest V3 extension with background service worker (background.js)
+
+Blocking rules defined in rules.json using Chrome Declarative Net Request API
+
+## Contributing
+Contributions are welcome! Please open issues or submit pull requests for improvements and new features.
+
+## License
+MIT
